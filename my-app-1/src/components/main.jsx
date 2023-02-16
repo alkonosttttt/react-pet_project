@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from './profile'
+import './main.css';
 
 const Main = () => {
     return (

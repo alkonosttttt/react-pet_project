@@ -1,11 +1,12 @@
 import React from 'react';
+import s from './profile.module.css';
 
 
 const Profile = () => {
     return (
-        <div className="profile_wrap">
+        <div className={s.profile_wrap}>
             <div>
-                <img src='https://miro.medium.com/max/2880/1*ydcB-SmmYa4Zy5bmOizZlw.png' alt="back_photo" className={"back_photo"}/>
+                <img src='https://miro.medium.com/max/2880/1*ydcB-SmmYa4Zy5bmOizZlw.png' alt="back_photo" className={s.back_photo}/>
             </div>
             <div>
                 ava + description
@@ -16,8 +17,14 @@ const Profile = () => {
                     new post
                 </div>
                 <div>
-                    <div>
-                        post1
+                    <div className={s.item}>
+                        <p>post1</p>
+                    </div>
+                    <div className={`${s.item} ${s.active}`}>
+                        <p>post2</p>
+                    </div>
+                    <div className={s.item}>
+                        <p>post3</p>
                     </div>
                 </div>
             </div>

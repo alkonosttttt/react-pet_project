@@ -1,0 +1,18 @@
+nav {
+    background-color: #98e2ff;
+    grid-area: n;
+}
+
+.nav_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    font-weight: bold;
+    color: #382a48;
+}
+
+.active {
+    color: #7747a6;
+}
