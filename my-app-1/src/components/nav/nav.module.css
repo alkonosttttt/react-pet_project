@@ -6,13 +6,18 @@ nav {
 .nav_wrap {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .item {
-    font-weight: bold;
-    color: #382a48;
+    margin: 7px 0;
+}
+
+.item:hover {
+    color: #7747a6;
 }
 
 .active {
+    margin: 7px 0;
     color: #7747a6;
 }

@@ -1,0 +1,18 @@
+.item {
+    background-color: #f5e0b1;
+    margin: 10px 0;
+    padding: 20px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/*.active {*/
+/*    background-color: #b2def6;*/
+/*}*/
+
+.item img {
+    height: 52px;
+    width: 52px;
+}
