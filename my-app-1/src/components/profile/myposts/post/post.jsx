@@ -9,6 +9,9 @@ const Post = (props) => {
                 <div>
                     <p>{props.text}</p>
                 </div>
+                <div>
+                    <p>Likes: {props.likesCount}</p>
+                </div>
             </div>
         </div>
     );

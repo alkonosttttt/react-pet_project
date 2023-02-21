@@ -6,13 +6,12 @@ import {Route, Routes} from "react-router-dom";
 
 const Main = () => {
     return (
-
             <main>
                 <Routes>
-                    <Route path="/profile" element={<Profile/>}/>
-                    <Route path="/dialogs" element={<Dialogs/>}/>
-                    <Route path="/settings" element={<Settings/>}/>
-                    <Route path="/music" element={<Music/>}/>
+                    <Route path="/profile/*" element={<Profile/>}/>
+                    <Route path="/dialogs/*" element={<Dialogs/>}/>
+                    <Route path="/settings/*" element={<Settings/>}/>
+                    <Route path="/music/*" element={<Music/>}/>
                 </Routes>
             </main>
 
