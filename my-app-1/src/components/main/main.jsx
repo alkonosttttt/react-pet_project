@@ -4,12 +4,13 @@ import './main.css';
 import Dialogs from "../dialogs/dialogs";
 import {Route, Routes} from "react-router-dom";
 
-const Main = () => {
+const Main = (props) => {
     return (
             <main>
                 <Routes>
-                    <Route path="/profile/*" element={<Profile/>}/>
-                    <Route path="/dialogs/*" element={<Dialogs/>}/>
+                    <Route path="/profile/*" element={<Profile postsData={props.postsData}/>}/>
+                    <Route path="/dialogs/*" element={<Dialogs dialogsData={props.dialogsData}
+                                                               messagesData={props.messagesData}/>}/>
                     <Route path="/settings/*" element={<Settings/>}/>
                     <Route path="/music/*" element={<Music/>}/>
                 </Routes>

@@ -6,13 +6,15 @@ import Main from "./components/main/main";
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="wrap">
                 <Header/>
                 <Nav/>
-                <Main/>
+                <Main postsData={props.state.profilePage.postsData}
+                      dialogsData={props.state.messagesPage.dialogsData}
+                      messagesData={props.state.messagesPage.messagesData}/>
                 <Footer/>
             </div>
         </BrowserRouter>

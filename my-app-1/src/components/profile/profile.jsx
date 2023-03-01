@@ -1,14 +1,15 @@
 import React from 'react';
 import s from './profile.module.css';
 import MyPosts from "./myposts/myposts.jsx";
-import ProfileInfo from "./myposts/profileInfo/profileInfo";
+import ProfileInfo from "./profileInfo/profileInfo";
 
 
-const Profile = () => {
+const Profile = (props) => {
+
     return (
         <div className={s.profile_wrap}>
             <ProfileInfo/>
-            <MyPosts/>
+            <MyPosts postsData={props.postsData}/>
         </div>
     );
 }
